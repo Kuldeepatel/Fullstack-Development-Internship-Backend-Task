@@ -30,7 +30,7 @@ const searchBooksByCategoryNameRent = async (req: Request, res: Response) => {
 const getAllBooks = async (req: Request, res: Response) => {
   try {
     const books = await Book.find({});
-    return res.status(200).json(books); 
+    res.status(200).json(books); 
   } catch (error) {
     console.error('Error fetching books:', error);
     res.status(500).json({ message: 'Server error' });
