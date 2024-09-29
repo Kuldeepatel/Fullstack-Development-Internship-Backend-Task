@@ -17,11 +17,11 @@ const searchBooksByRent = async (req: Request, res: Response) => {
 
 // TO Search Book By Category + BookName + BookRent
 const searchBooksByCategoryNameRent = async (req: Request, res: Response) => {
-  const { category, bookName, minRent, maxRent } = req.body;
+  const { category, bookName, rentPerDay } = req.body;
   const books = await Book.find({
     category,
     bookName,
-    rentPerDay: { $gte: minRent, $lte: maxRent },
+    rentPerDay,
   });
   res.json(books);
 };
