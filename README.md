@@ -4,7 +4,6 @@ Sure! Here's the README structured in a more concise, straightforward manner for
 
 # Fullstack Development Internship - Backend Task
 
-## Author Information
 - **Name:** Kuldeep Patel
 - **Email:** patelkuldip1308@gmail.com
 - **Phone No:** 6352688586
