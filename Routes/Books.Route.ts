@@ -4,9 +4,9 @@ import { searchBooksByName, searchBooksByRent, searchBooksByCategoryNameRent, ge
 const router = Router();
 
 // routes
-router.get('/searchByName', searchBooksByName);
-router.get('/searchByRent', searchBooksByRent);
-router.get('/searchByCategoryNameRent', searchBooksByCategoryNameRent);
+router.post('/searchByName', searchBooksByName);
+router.post('/searchByRent', searchBooksByRent);
+router.post('/searchByCategoryNameRent', searchBooksByCategoryNameRent);
 router.get('/getallbook',getAllBooks);
 
 export default router;
