@@ -5,7 +5,7 @@ import {
   getTransactionHistory,
   getBooksIssuedToUser,
   getBooksIssuedInDateRange
-} from '../controllers/Transactions.Controller';
+} from '../Controllers/Transactions.Controller';
 
 const router = Router();
 
