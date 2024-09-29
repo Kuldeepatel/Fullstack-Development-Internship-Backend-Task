@@ -18,11 +18,13 @@ const searchBooksByRent = async (req: Request, res: Response) => {
 // TO Search Book By Category + BookName + BookRent
 const searchBooksByCategoryNameRent = async (req: Request, res: Response) => {
   const { category, bookName, rentPerDay } = req.body;
+  console.log(category,bookName,rentPerDay)
   const books = await Book.find({
     category,
     bookName,
     rentPerDay,
   });
+  console.log(books)
   res.json(books);
 };
 
